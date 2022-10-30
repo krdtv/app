@@ -1,0 +1,92 @@
+<html>
+    <head>
+  <meta charset="UTF-8">
+  <!-- We add a viewport meta tag for best rendering on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">                            <title> tornadox_Player1</title>
+                                     <script src="https://cdn.radiantmediatechs.com/rmp/7.11.6/js/rmp-hlsjs.min.js"></script>
+                                  
+                                   
+                                     
+                            </head>
+                            <body>
+                             
+ <style>
+                                html,
+                                body {
+                                    height: 100%;
+                                    width: 100%;
+                                    background-color: #000;
+                                    overflow: hidden;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+                                .rmp-overlay-button .rmp-i-play {
+                                    font-size: 120px !important;
+                                }
+
+                                .rmp-i-play:hover, rmp-i-volume:hover, rmp-i-pause:hover {
+                                    color: #552a86 !important;  
+                                }
+
+                                .rmp-module {
+                                    top: 30px !important;
+                                }
+
+                                .rmp-module-overlay-icons {
+                                    top: 30px !important;
+                                }
+
+                              
+                            </style>
+<div id="rmpPlayer"></div>
+
+
+
+
+                                <script>
+								     function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+var live = getUrlVars()["live"];
+var ch = getUrlVars()["channel"];
+
+                                    var src = {
+                                        hls: 'https://github.com/krdtv/app/blob/main/info.mp4',
+                                    };
+
+                                    var settings = {
+                                        licenseKey: 'Kl8lPW92PTBpPTJ1OGs/cm9tNWRhc2lzMzBkYjBBJV8q',
+                                        iframeMode: true,
+                                        iframeAllowed: true,
+                                        autoplay: false,
+                                        sharing: false,
+                                        skin: 's3',
+                                        src: src,
+                                        pip: false,
+                                        logoPosition: 'bottom',
+                                        logoWatermark: 'false',
+                                        mute: 'false',
+                                        isLive: true,
+                                        gaEvents: ['context', 'ready', 'playerstart', 'error', 'adimpression', 'adloadererror', 'aderror']
+                                    };
+                                    var elementID = 'rmpPlayer';
+                                   
+                                    var rmp = new RadiantMP(elementID);
+                                    rmp.init(settings);
+                                    
+
+                                </script>
+
+                               
+
+                                    
+<script>
+</script>
+
+                      
+                            </body>
+                            </html>
