@@ -1,0 +1,1 @@
+setURL("https://raw.githubusercontent.com/krdtv/app/main/720p.php"
