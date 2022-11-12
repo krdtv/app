@@ -1,0 +1,1 @@
+<source src='https://raw.githubusercontent.com/krdtv/app/main/info.mp4' type='application/x-mpegURL'></source>
