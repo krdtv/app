@@ -1,1 +1,3 @@
-{ "serverUrl": "https://corsproxy.org/?https://android-apps.store/newapp/test_icin.php" }
+{
+  "serverUrl": "https://corsproxy.org/?https://android-apps.store/newapp/test_icin.php"
+}
